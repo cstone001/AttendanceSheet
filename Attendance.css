@@ -1,0 +1,41 @@
+body {
+  background: #fff url("Images/t1095-notebook16p.jpg") no-repeat center center fixed;
+  background-size: 100% 100%;
+  font-family: 'Bradley Hand', Noteworthy, cursive;
+  overflow: hidden; /*HIDES THE SCROLLBAR*/
+}
+
+h1 {
+  text-align: center;
+  margin: 72px 0 0 20%;
+  margin-left: 20%;
+}
+
+.date {
+  margin: 6px 0 0 80%;
+  /*line-height: 220%;*/
+  font-size: 18px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#attendanceSheet {
+  text-align: center;
+}
+
+ul li {
+  margin-top: 36px;
+}
+
+#students {
+  cursor: pointer;
+  list-style: none;
+  font-size: 28px;
+  margin: -34px 0 16px 10%;
+}
+
+#students .present {
+  font-size: 25px;
+  text-decoration:line-through;
+  color: #ff0000;
+}
