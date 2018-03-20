@@ -6,25 +6,17 @@ body {
 }
 
 h1 {
-  text-align: center;
   margin: 72px 0 0 20%;
-  margin-left: 20%;
 }
 
 .date {
   margin: 6px 0 0 80%;
-  /*line-height: 220%;*/
   font-size: 18px;
-  border: none;
   background-color: rgba(0, 0, 0, 0);
 }
 
-#attendanceSheet {
-  text-align: center;
-}
-
 ul li {
-  margin-top: 36px;
+  margin: 23.5px 0-26px 0;
 }
 
 #students {
@@ -35,7 +27,22 @@ ul li {
 }
 
 #students .present {
-  font-size: 25px;
   text-decoration:line-through;
+  color: #ff0000;
+}
+
+.foot {
+  margin: 30px 0 0 15%;
+}
+
+#Input, #new, #erase {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#new, #erase {
+  cursor: pointer;
+}
+
+#alert {
   color: #ff0000;
 }
