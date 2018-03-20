@@ -12,13 +12,13 @@
 
   <body>
     <div class="container">
-      <h1>Attendance Sheet</h1>
+      <h1 class="text-center">Attendance Sheet</h1>
 
-      <form>
-        <input class="date" type="date" name="date">
+      <form class="form-inline">
+        <input class="date border border-0" type="date" name="date" required>
       </form>
 
-      <div id="attendanceSheet">
+      <div class="text-center" id="attendanceSheet">
         <ul id="students">
           <li>Sarah</li>
           <li>Michael</li>
@@ -29,9 +29,20 @@
           <li>James</li>
         </ul>
       </div>
+      
+      <div class="foot text-center">
+        <form id="form" action="#" method="POST">
+          <input class="border border-0" type= "text" id= "Input" maxlength= "12" size= "12" placeholder= "Add name" />
+          <input class="border border-0" type="button" id="new" value="New Student"/> 
+          <button class="border border-0" id="erase">Erase All</button>
+        </form>
+      </div>
+
+      <div class="text-center" id="alert"></div>
+      
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="Attendance.js"></script>
 
