@@ -6,7 +6,9 @@
 
     <title>Attendance Sheet 2018</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Attendance.css">
   </head>
 
@@ -31,10 +33,17 @@
       </div>
       
       <div class="foot text-center">
-        <form id="form" action="#" method="POST">
-          <input class="border border-0" type= "text" id= "Input" maxlength= "12" size= "12" placeholder= "Add name" />
-          <input class="border border-0" type="button" id="new" value="New Student"/> 
-          <button class="border border-0" id="erase">Erase All</button>
+        <form id="form" class="form-inline" name="studentForm" method="POST" onsubmit="ValidateForm(this.studentForm)">
+          <div class="row center">
+            <div class="col-12 col-sm-12 center">
+              <input class="border border-0 form-control text-center" type= "text" id= "Input" name="studentName" placeholder= "Add name" pattern="^([a-zA-Z\s]{2,15})$" />
+              <input class="border border-0" type="submit" id="new" value="New Student" onclick="addTo()"/> <!--onclick="addItem()"/>-->
+            </div>
+            <div class="row center">
+              <div class="col-12 col-sm-12 center">
+                <button class="border border-0" id="erase">Erase All</button>
+              </div>
+            </div>  
         </form>
       </div>
 
@@ -44,46 +53,9 @@
 
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/Users/Mac/Documents/websites/bundles/0a3b9034e109d88d72f83c9e6c9d13b7.js"></script>
     <script src="Attendance.js"></script>
-
-  </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-<!--<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Grocery List</title>
-    <!- Latest compiled and minified CSS -->
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="GitHub/GroceryList/grocery.css">
-  </head>
-  <body>
-    <span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;"><section>
-    </span><span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;">  <form id="form" action="#" method="POST">
-    </span><span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;">  <input id="description" name="description" type="text" />
-    </span><span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;">  <input id="add" type="submit" value="Add" />
-    </span><span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;">  <button id="clear">Clear All</button>
-    </span><span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;">  </form>
-    </span><span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;">  <div id="alert"></div>
-    </span><span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;">  <ul id="todos"></ul>
-    </span><span style="font-family: Consolas, Monaco, monospace; font-size: 12px; line-height: 18px;"></section></span>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="Maybe.js"></script>
-
+    <script src="AttendanceValidation.js"></script>  
 
   </body>
 </html>
