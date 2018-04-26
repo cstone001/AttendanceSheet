@@ -2,21 +2,21 @@ body {
   background: #fff url("Images/t1095-notebook16p.jpg") no-repeat center center fixed;
   background-size: 100% 100%;
   font-family: 'Bradley Hand', Noteworthy, cursive;
-  overflow: hidden; /*HIDES THE SCROLLBAR*/
+  /*overflow: hidden;*/ /*HIDES THE SCROLLBAR*/
 }
 
 h1 {
-  margin: 72px 0 0 20%;
+  margin: 85px 0 0 20%;
 }
 
 .date {
-  margin: 6px 0 0 80%;
+  margin: 10px 0 10px 80%;
   font-size: 18px;
   background-color: rgba(0, 0, 0, 0);
 }
 
 ul li {
-  margin: 23.5px 0-26px 0;
+  margin: 23.5px 0 -26px 0;
 }
 
 #students {
@@ -32,12 +32,24 @@ ul li {
 }
 
 .foot {
-  margin: 30px 0 0 15%;
+  margin: 19px 0 0 15%;
+}
+
+.center {
+  margin: auto;
+}
+
+#Input {
+  margin-top: -4px;
 }
 
 #Input, #new, #erase {
   background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
 }
+
+#new {
+  padding: 3.750px 7.500px;
 
 #new, #erase {
   cursor: pointer;
@@ -45,4 +57,24 @@ ul li {
 
 #alert {
   color: #ff0000;
+  font-size: 14px;
 }
+  
+small{
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}  
+  
+.has-error, .help-block {
+  color: #cc0000;
+  font-weight: bold;
+}
+  
+.form-control-feedback.glyphicon.glyphicon-ok {
+  display: none !important;
+}
+
+.form-control-feedback.glyphicon-remove.glyphicon {
+  color: #cc0000;
+}  
