@@ -17,7 +17,7 @@ $('#new').click( function() {
     return false;
   } else if (myarr.length > size) {
     $('#alert').html("<strong>Warning!</strong> Your class is full");
-    $('#alert').fadeIn().delay(2500).fadeOut();
+    $('#alert').fadeIn().delay(3000).fadeOut();
 
     $("#Input").hide()
     $("#new").hide()
